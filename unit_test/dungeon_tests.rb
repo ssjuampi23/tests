@@ -1,8 +1,7 @@
-$: << "/home/juampi/rails_projects/tests/tests"
 
 require 'minitest/spec'
 require 'minitest/autorun'
-require 'dungeon'
+require_relative '../dungeon'
 
 #http://www.ruby-doc.org/stdlib-1.9.3/libdoc/minitest/unit/rdoc/MiniTest/Assertions.html
 class TestDungeon < MiniTest::Unit::TestCase
