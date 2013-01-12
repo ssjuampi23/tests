@@ -1,4 +1,3 @@
-#$LOAD_PATH << File.dirname(__FILE__)
 require './dungeon'
 
 print "Please enter your name: "
