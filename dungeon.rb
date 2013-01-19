@@ -33,13 +33,17 @@ class Dungeon
     show_current_description
   end
 
+  #Player
+ 
   class Player
     attr_accessor :name, :location
     def initialize(name)
       @name = name
     end
   end
-
+  
+  #Room
+  
   class Room
     attr_accessor :reference, :name, :description, :connections
     def initialize(reference, name, description, connections)
@@ -53,5 +57,6 @@ class Dungeon
       @name + "\n\nYou are in " + @description
     end
   end
+
 
 end
