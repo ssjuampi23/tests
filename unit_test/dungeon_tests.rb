@@ -87,7 +87,7 @@ class TestDungeon < MiniTest::Unit::TestCase
      end
      
      it "should display a connection of the room" do
-       @new_room.connections[:west]
+       @new_room.connections[:west].must_equal :smallercave
      end
      
    end #describe Room 
