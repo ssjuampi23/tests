@@ -54,4 +54,17 @@ class Dungeon
     end
   end
 
+  def parse_input(input)
+    params = input.split
+    cmd = params[0]
+    cmd_param = params[1]
+
+    case cmd
+    when "go"
+      puts go(cmd_param.to_sym)
+    else
+    puts "I do not recognize that command!"
+    end
+  end
+
 end
